@@ -1,0 +1,17 @@
+{
+    "name": "stackexchange/module-example",
+    "description": "GIve Some Description",
+    "type": "magento2-module",
+    "keywords": ["My keyword"],
+    "license": "OSL-3.0",
+    "version": "1.0.0",
+    "minimum-stability": "stable",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "StackExchange\\Example\\": ""
+        }
+    }
+}

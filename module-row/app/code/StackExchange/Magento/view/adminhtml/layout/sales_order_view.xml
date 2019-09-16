@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="order_items">
+            <arguments>
+                <argument name="columns" xsi:type="array">
+                    <item name="customcol" xsi:type="string" translate="true">Custom column</item>
+                </argument>
+            </arguments>  
+            <block class="StackExchange\Magento\Block\Adminhtm\Items\Column\Custom" name="column_customcol" 
+                   template="StackExchange_Magento::items/column/custom.phtml" group="column"/>         
+        </referenceBlock>
+        <referenceBlock name="default_order_items_renderer">
+            <arguments>
+                <argument name="columns" xsi:type="array">
+                    <item name="customcol" xsi:type="string" translate="false">col-customcol</item>
+                </argument>  
+            </arguments>             
+        </referenceBlock>
+    </body>
+</page>

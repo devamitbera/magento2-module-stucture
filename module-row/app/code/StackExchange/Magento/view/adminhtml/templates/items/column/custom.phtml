@@ -1,0 +1,13 @@
+<?php
+// phpcs:disable Magento2.Templates.ThisInTemplate
+?>
+<?php
+/* @var $block \Magento\Sales\Block\Adminhtml\Items\Column\Name */
+?>
+<?php if ($_item = $block->getItem()) : ?>
+    <div id="order_item_<?= (int) $_item->getId() ?>_title"
+         class="product-title">
+        <?= $block->escapeHtml($_item->getName()) ?>
+    </div>
+<?php endif; ?>
+
