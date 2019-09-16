@@ -1,7 +1,13 @@
 <?php
 
 /** @var \StackExchange\Example\Block\Example $block */
+$student = $block->getJohnInfo();
 ?>
 
-Some testing
+<?php if($student):?>
+    <?php echo $student->getName();?>
+    <?php echo '<pre>'; print_r($student->debug())?>
+<?php endif; ?>
+
+
 
