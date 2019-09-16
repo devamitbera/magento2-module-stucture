@@ -3,9 +3,17 @@
     <head>
         <title>Example Page</title>
     </head>
-    <!--
-    <body>
 
+    <body>
+        <!-- as i want to show at content section then use content as referenceContainer -->
+        <referenceContainer name="content">
+            <block class="StackExchange\Example\Block\Example" 
+                   name="example.myblock" as="example-myblock"
+                    template="StackExchange_Example::example.phtml"> 
+  
+            </block>
+
+        </referenceContainer>
     </body>
-        -->
+
 </page>
