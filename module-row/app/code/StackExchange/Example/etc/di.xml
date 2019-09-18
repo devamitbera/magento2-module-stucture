@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Defined Collection Class for Grid of Ui component listing -->
+    <!-- name is virtual Type --> 
+       <virtualType name="StackExchange\Example\Model\ResourceModel\Student\Grid\Collection" 
+                    type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">example</argument>
+            <argument name="resourceModel" xsi:type="string">StackExchange\Example\Model\ResourceModel\Student</argument>
+        </arguments>
+    </virtualType>
+    <!-- Add Virtual Grid Class to  Ui compoment -->.
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <!--name format is UiComponent file name__data_source -->
+                <item name="example_ui_listing_data_source" xsi:type="string">StackExchange\Example\Model\ResourceModel\Student\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
