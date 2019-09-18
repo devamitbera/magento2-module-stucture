@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <!-- Add new Item to Admin left Menu -->
+        <!-- parent is not required -->
+        <add id="StackExchange_Example::menu" title="Example" translate="title" 
+             module="StackExchange_Example" 
+            sortOrder="500"  resource="StackExchange_Example::menu"
+        />
+        <!-- add new  sub Item under this new Menu -->
+        <add id="StackExchange_Example::listing" title="Manage Example" translate="title" 
+        module="StackExchange_Example" parent="StackExchange_Example::menu"
+        sortOrder="10" resource="StackExchange_Example::example_listing"
+        action="exampleadminid/example/listing"/>
+        
+    </menu>
+</config>
