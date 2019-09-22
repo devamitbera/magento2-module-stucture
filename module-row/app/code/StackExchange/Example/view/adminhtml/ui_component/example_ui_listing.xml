@@ -91,7 +91,17 @@
                     <item name="label" xsi:type="string" translate="true">Name</item>
                 </item>
             </argument>
-        </column>            
+        </column>
+        <!-- 
+            Add action column to Ui grid, Add Edit and Delete links from Here
+        -->
+        <actionsColumn name="actions" 
+                       class="StackExchange\Example\Ui\Listing\Columns\ExampleActions">
+            <settings>
+                <!-- IndexField is same as selectionsColumn indexField -->
+                <indexField>id</indexField>
+            </settings>
+        </actionsColumn>                                
     </columns>
    
 </listing>

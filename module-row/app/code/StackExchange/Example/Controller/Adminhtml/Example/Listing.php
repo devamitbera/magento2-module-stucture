@@ -38,7 +38,7 @@ class Listing extends  \Magento\Backend\App\Action
          */
         $resultPage->getConfig()->getTitle()->set(_('Hello Config Title'));
         $resultPage->addBreadcrumb(__('Hello'), __('Hello'));
-         $resultPage->addBreadcrumb(__('Example'), __('Example'));
+        $resultPage->addBreadcrumb(__('Example'), __('Example'));
         return $resultPage;        
     }
 
