@@ -18,6 +18,8 @@ class ExampleDataProvider  extends \Magento\Ui\DataProvider\ModifierPoolDataProv
      * @var CollectionFactory
      */
     private $studentCollectionFactory;
+    
+    protected $loadedData;
 
     public function __construct(
         $name,

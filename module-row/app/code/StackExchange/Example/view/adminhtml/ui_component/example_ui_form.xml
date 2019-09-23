@@ -14,6 +14,14 @@
     </argument>
     <!-- Mapping Data  with Ui component -->
     <settings>
+        <!-- Adding Save and Delete and other button at here -->
+        <buttons>
+            <button name="save" class="StackExchange\Example\Block\Adminhtml\Edit\Form\SaveButton"/>
+             <button name="delete" class="StackExchange\Example\Block\Adminhtml\Edit\Form\DeleteButton"/>
+             <button name="back" class="StackExchange\Example\Block\Adminhtml\Edit\Form\BackButton"/>
+             <button name="reset" class="StackExchange\Example\Block\Adminhtml\Edit\Form\ResetButton"/>
+             <button name="new" class="StackExchange\Example\Block\Adminhtml\Edit\Form\NewButton"/>
+        </buttons>
         <namespace>example_ui_form</namespace>
         <dataScope>data</dataScope>
         <deps>
@@ -102,7 +110,7 @@
         <field name="gender" formElement="select">
              <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
-                    <item name="source" xsi:type="string"></item>
+                    <item name="source" xsi:type="string">example_ui</item>
                 </item>
             </argument>
             <settings>
@@ -110,9 +118,9 @@
                     <rule name="required-entry" xsi:type="boolean">true</rule>
                     <rule name="validate-select" xsi:type="boolean">true</rule>
                 </validation>                
-                <dataType>text</dataType>
+                <dataType>select</dataType>
                 <label translate="true">Gender</label>
-                <dataScope>example_ui</dataScope>
+                <dataScope>gender</dataScope>
             </settings>
             <formElements>
                 <select>

@@ -6,7 +6,7 @@ use Magento\Framework\Data\OptionSourceInterface;
 
 class Gender  implements OptionSourceInterface
 {
-    //put your code here
+
     public function toOptionArray(): array {
         $options = [];
             $options[] = [

@@ -33,4 +33,5 @@ class Example extends \Magento\Framework\View\Element\Template
         
         return $studentModel;
     }
+
 }
